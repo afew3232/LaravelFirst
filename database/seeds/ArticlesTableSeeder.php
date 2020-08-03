@@ -13,6 +13,7 @@ class ArticlesTableSeeder extends Seeder
     {
         DB::table("articles")->delete();//Query Builder を使って、Articlesテーブルのレコードを全て削除。
 
+/*
         $faker = Faker\Factory::create('en_US');// Faker を使用してダミーデータを作成しています。Laravel では標準で Faker が使用できるようになっています。
 
         for ($i = 0; $i < 10; $i++) {    // ③
@@ -21,6 +22,7 @@ class ArticlesTableSeeder extends Seeder
                 'body' => $faker->paragraph()
             ]);
         }
-
+*/
+        factory(App\Article::class, 20)->create();
     }
 }
