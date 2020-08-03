@@ -1,9 +1,5 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>about</title>
-</head>
-<body>
+@extends("layout")
+@section("content")
 	<h1>About</h1>
-</body>
-</html>
+	<p><?= $first_name ?><?= $last_name ?></p>
+@endsection
